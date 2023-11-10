@@ -12,7 +12,7 @@ services:
     volumes:
       - ./workspace:/workspace
       - ./_docker/.zshrc:/home/dev/.zshrc
-      - ./_docker/.history:/home/dev/.history
+      - ./_docker/.zsh_history:/home/dev/.zsh_history
     ports:
       - "8888:8888"
     networks:

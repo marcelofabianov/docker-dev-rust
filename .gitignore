@@ -39,6 +39,6 @@ __MACOSX/
 *.log.*
 debug.log
 
-_docker/.history
+_docker/.zsh_history
 
 workspace/*
