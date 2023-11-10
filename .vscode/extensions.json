@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "serayuzgur.crates",
+    "tamasfe.even-better-toml",
+    "humao.rest-client",
+    "1YiB.rust-bundle",
+    "rust-lang.rust-analyzer",
+    "Swellaby.vscode-rust-test-adapter",
+    "dustypomerleau.rust-syntax",
+    "formulahendry.code-runner"
+  ]
+}
