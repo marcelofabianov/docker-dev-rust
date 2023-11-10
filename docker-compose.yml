@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: app
+    image: marcelofabianov/rust-dev
+    restart: always
+    working_dir: /app
+    build:
+      context: ./_docker
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+      - ./_docker/.zshrc:/home/dev/.zshrc
+      - ./_docker/.history:/home/dev/.history
+    ports:
+      - "8888:8888"
+    networks:
+      - rust_network
+
+networks:
+  rust_network:
+    driver: bridge
