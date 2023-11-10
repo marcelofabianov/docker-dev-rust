@@ -5,12 +5,12 @@ services:
     container_name: app
     image: marcelofabianov/rust-dev
     restart: always
-    working_dir: /app
+    working_dir: /workspace
     build:
       context: ./_docker
       dockerfile: Dockerfile
     volumes:
-      - ./app:/app
+      - ./workspace:/workspace
       - ./_docker/.zshrc:/home/dev/.zshrc
       - ./_docker/.history:/home/dev/.history
     ports:
