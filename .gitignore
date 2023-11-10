@@ -40,3 +40,5 @@ __MACOSX/
 debug.log
 
 _docker/.history
+
+workspace/*

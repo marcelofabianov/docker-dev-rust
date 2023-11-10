@@ -31,6 +31,8 @@ RUN curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/t
 
 COPY .zshrc /home/dev/.zshrc
 
+RUN rustup component add rustfmt
+
 EXPOSE 8080
 
 CMD ["tail", "-f", "/dev/null"]
